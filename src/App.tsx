@@ -31,9 +31,11 @@ function App() {
     <div className='container'>
       {cardsInfo.map((el, ind) => 
         <Card key={ind} img={el.img}>
-          <h5 className={styles["card-title"]}>{el.title}</h5>
-          <p className={styles["card-text"]}>{el.text}</p>
-          <a href="{el.link}" className={styles["btn"]}>Перейти</a>
+          <>
+            <h5 className={styles["card-title"]}>{el.title}</h5>
+            <p className={styles["card-text"]}>{el.text}</p>
+            <a href="{el.link}" className={styles["btn"]}>Перейти</a>
+          </>
         </Card>)}
     </div>
   )
